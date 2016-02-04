@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class SampleController2 {
     private static final Logger log = LoggerFactory.getLogger(SampleController2.class);
 
-    @RequestMapping
+    @RequestMapping("/doC")
     public String doC(@ModelAttribute("msg") String msg) {
         log.info("doC called........");
         return "result";
