@@ -13,7 +13,7 @@ import java.sql.Connection;
  * Created by dw on 2016. 1. 31..
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration("file:src/main/webapp/WEB-INF/spring/**/*.xml")
+@ContextConfiguration("classpath:/applicationContext.xml")
 public class DataSourceTest {
     @Inject
     private DataSource ds;

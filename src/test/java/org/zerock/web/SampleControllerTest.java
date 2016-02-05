@@ -20,7 +20,7 @@ import javax.inject.Inject;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration
-@ContextConfiguration(locations = {"file:src/main/webapp/WEB-INF/spring/**/*.xml"})
+@ContextConfiguration("classpath:/applicationContext.xml")
 public class SampleControllerTest {
     private static final Logger log = LoggerFactory.getLogger(SampleControllerTest.class);
 
