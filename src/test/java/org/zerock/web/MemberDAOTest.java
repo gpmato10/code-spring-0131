@@ -41,4 +41,17 @@ public class MemberDAOTest {
 
         dao.insertMember(vo);
     }
+
+    @Test
+    public void testSelectOne1() throws Exception {
+        MemberVO vo = new MemberVO();
+        vo.setUserid("user01");
+        vo.setUserpw("user01");
+        vo.setUsername("USER01");
+        vo.setEmail("user01@aaa.com");
+
+        dao.insertMember(vo);
+        dao.readMember("user01");
+        System.out.println(dao.readMember("user01"));
+    }
 }
